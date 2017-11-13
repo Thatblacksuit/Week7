@@ -5,6 +5,6 @@ document.addEventListener("deviceready", function(){
     function submitBtn() {
     var rndm = ['True','False'][Math.round(Math.random())]
     $("#myText").text(rndm);
-   navigator.notification.vibrate(500);
+   navigator.notification.beep(1);
 
 };
