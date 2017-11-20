@@ -2,7 +2,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 
 function onDeviceReady(){
-    $('#submitButton').on("click", getAnswer); 
+    $('#submitButton').on("click", getAnswer);
+    navigator.notification.beep(1);
 
 }
     
