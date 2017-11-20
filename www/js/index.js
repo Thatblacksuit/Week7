@@ -18,12 +18,12 @@ function getAnswer() {
     $("#responseText").text(rndm);
     
     
-        if(rndm == True)
+        if(rndm == 'True')
     {
         $("#responseText").css('color', 'green'); 
         navigator.notification.beep(1);	
     } else {
-                $("#responseText").css('color', 'red'); 
+        $("#responseText").css('color', 'red'); 
         navigator.notification.beep(1);
     }
     }
