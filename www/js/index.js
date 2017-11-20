@@ -1,10 +1,13 @@
-document.addEventListener("deviceready", function(){
-   navigator.notification.beep(1);   
-}, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 
-    function submitBtn() {
-    var rndm = ['True','False'][Math.round(Math.random())]
+
+function onDeviceReady(){
+    $('#submitButton').on("click", getAnswer); 
+
+}
+    
+            function getAnswer() {
+        var rndm = ['True','False'][Math.round(Math.random())]
     $("#myText").text(rndm);
    navigator.notification.beep(1);
-
-};
+            }
