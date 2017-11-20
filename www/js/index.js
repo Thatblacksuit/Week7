@@ -16,5 +16,14 @@ function getAnswer() {
     
             var rndm = ['True','False'][Math.round(Math.random())]
     $("#responseText").text(rndm);
-navigator.notification.beep(1);
+    
+    
+        if(rndm == True)
+    {
+        $("#responseText").css('color', 'green'); 
+        navigator.notification.beep(1);	
+    } else {
+                $("#responseText").css('color', 'red'); 
+        navigator.notification.beep(1);
+    }
     }
